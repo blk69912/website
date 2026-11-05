@@ -1,6 +1,11 @@
 import "server-only";
 import { lookup } from "node:dns/promises";
+import { lookup as lookupCb, type LookupAddress } from "node:dns";
 import { isIP } from "node:net";
+import { Agent, fetch as undiciFetch } from "undici";
+import { isPrivateAddress } from "./ip";
+
+export { isPrivateAddress };
 import type { Artifacts } from "./checker";
 
 const UA = "AgentReadyChecker/1.0 (+https://github.com/blk69912/website)";
@@ -9,19 +14,20 @@ const TIMEOUT_MS = 8000;
 
 export class FetchError extends Error {}
 
-export function isPrivateAddress(ip: string): boolean {
-  if (isIP(ip) === 4) {
-    const [a, b] = ip.split(".").map(Number);
-    return (
-      a === 0 || a === 10 || a === 127 || (a === 100 && b >= 64 && b <= 127) || (a === 169 && b === 254) ||
-      (a === 172 && b >= 16 && b <= 31) || (a === 192 && b === 168) || (a === 198 && (b === 18 || b === 19)) || a >= 224
-    );
-  }
-  const v = ip.toLowerCase();
-  if (v === "::" || v === "::1") return true;
-  if (v.startsWith("::ffff:")) return isPrivateAddress(v.slice(7));
-  return /^(fc|fd|fe8|fe9|fea|feb|ff)/.test(v);
+// Validate addresses at connect time, so a DNS answer cannot change between the
+// check and the connection (DNS rebinding). Every resolved address must be public.
+type LookupCb = (err: NodeJS.ErrnoException | null, address: string | LookupAddress[], family?: number) => void;
+function guardedLookup(hostname: string, options: object, cb: LookupCb) {
+  lookupCb(hostname, { ...options, all: true }, (err, addrs) => {
+    if (err) return cb(err, []);
+    const list = addrs as LookupAddress[];
+    const bad = list.find((a) => isPrivateAddress(a.address));
+    if (bad || !list.length) return cb(Object.assign(new Error(`Blocked private address for ${hostname}`), { code: "EBLOCKED" }), []);
+    if ((options as { all?: boolean }).all) return cb(null, list);
+    cb(null, list[0].address, list[0].family);
+  });
 }
+const agent = new Agent({ connect: { lookup: guardedLookup as never }, connectTimeout: TIMEOUT_MS });
 
 export function normalizeUrl(input: string): URL {
   let s = input.trim();
@@ -61,11 +67,14 @@ export async function safeGet(input: URL, accept = "text/html,*/*;q=0.8", hops =
   let u = input;
   for (let i = 0; i <= hops; i++) {
     await assertPublicHost(u);
-    const res = await fetch(u, {
+    const res = await undiciFetch(u, {
       redirect: "manual",
       headers: { "user-agent": UA, accept },
       signal: AbortSignal.timeout(TIMEOUT_MS),
-      cache: "no-store",
+      dispatcher: agent,
+    }).catch((e: Error & { cause?: { code?: string } }) => {
+      if (e.cause?.code === "EBLOCKED") throw new FetchError("Private or internal addresses cannot be checked.");
+      throw e;
     });
     if (res.status >= 300 && res.status < 400 && res.headers.get("location")) {
       u = normalizeUrl(new URL(res.headers.get("location")!, u).href);

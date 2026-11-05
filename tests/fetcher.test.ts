@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { isPrivateAddress, normalizeUrl } from "@/lib/fetcher";
+import { normalizeUrl } from "@/lib/fetcher";
+import { isPrivateAddress } from "@/lib/ip";
 
 describe("SSRF guards", () => {
   it.each(["127.0.0.1", "10.1.2.3", "172.16.0.1", "192.168.1.1", "169.254.169.254", "100.64.0.1", "0.0.0.0", "::1", "fd00::1", "fe80::1", "::ffff:127.0.0.1"])("%s is private", (ip) => {

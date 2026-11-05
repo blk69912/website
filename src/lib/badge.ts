@@ -11,7 +11,10 @@ export function badgeColor(score: number | null): string {
   return "#b4232c";
 }
 
-const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+
+/** Badge labels are limited to a safe character set. */
+export const safeLabel = (s: string | null) => (s ?? "agent ready").replace(/[^A-Za-z0-9 ._-]/g, "").trim().slice(0, 40) || "agent ready";
 
 export function badgeSvg(label: string, value: string, color: string): string {
   const lw = Math.round(width(label) + 12);
