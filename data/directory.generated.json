@@ -1,0 +1,369 @@
+{
+  "syncedAt": "2026-11-05T06:36:26.995Z",
+  "entries": [
+    {
+      "repo": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "category": "skills",
+      "description": "Public repository for Agent Skills",
+      "stars": 187503,
+      "language": "Python",
+      "topics": [
+        "agent-skills"
+      ],
+      "pushedAt": "2026-10-28T19:20:39Z",
+      "archived": false
+    },
+    {
+      "repo": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "category": "skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "stars": 113330,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skills",
+        "antigravity",
+        "claude-code",
+        "codex",
+        "cursor",
+        "skills"
+      ],
+      "pushedAt": "2026-11-01T19:24:49Z",
+      "archived": false
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "category": "mcp",
+      "description": "Model Context Protocol Reference Servers",
+      "stars": 91803,
+      "language": "TypeScript",
+      "topics": [],
+      "pushedAt": "2026-11-05T06:26:00Z",
+      "archived": false
+    },
+    {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "category": "skills",
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "stars": 78779,
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "antigravity",
+        "automation",
+        "claude",
+        "claude-code"
+      ],
+      "pushedAt": "2026-09-18T07:16:11Z",
+      "archived": false
+    },
+    {
+      "repo": "upstash/context7",
+      "url": "https://github.com/upstash/context7",
+      "category": "mcp",
+      "description": "Context7 Platform -- Up-to-date docs for AI agents",
+      "stars": 64213,
+      "language": "TypeScript",
+      "topics": [
+        "llm",
+        "mcp",
+        "mcp-server",
+        "vibe-coding"
+      ],
+      "pushedAt": "2026-11-04T17:51:22Z",
+      "archived": false
+    },
+    {
+      "repo": "coreyhaines31/marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "category": "skills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "stars": 58571,
+      "language": "JavaScript",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "ai-seo",
+        "claude",
+        "claude-code",
+        "claude-code-plugin"
+      ],
+      "pushedAt": "2026-11-04T19:01:33Z",
+      "archived": false
+    },
+    {
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "category": "skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "stars": 56136,
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "ai-scientist",
+        "bioinformatics",
+        "chemoinformatics",
+        "claude",
+        "claude-skills"
+      ],
+      "pushedAt": "2026-11-02T09:23:27Z",
+      "archived": false
+    },
+    {
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "category": "mcp",
+      "description": "Chrome DevTools for coding agents",
+      "stars": 54811,
+      "language": "TypeScript",
+      "topics": [
+        "browser",
+        "chrome",
+        "chrome-devtools",
+        "debugging",
+        "devtools",
+        "mcp"
+      ],
+      "pushedAt": "2026-11-05T05:13:40Z",
+      "archived": false
+    },
+    {
+      "repo": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "category": "mcp",
+      "description": "Local code intelligence for developers and AI agents. Connect code, docs and infrastructure in a persistent graph, with CBM Lens, MCP tools, agent integrations and change-aware test selection.",
+      "stars": 48139,
+      "language": "C",
+      "topics": [
+        "aider",
+        "ast",
+        "claude-code",
+        "code-analysis",
+        "code-intelligence",
+        "codex"
+      ],
+      "pushedAt": "2026-11-04T23:21:44Z",
+      "archived": false
+    },
+    {
+      "repo": "wshobson/agents",
+      "url": "https://github.com/wshobson/agents",
+      "category": "skills",
+      "description": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+      "stars": 42221,
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "agentic-ai",
+        "ai-agents",
+        "anthropic",
+        "antigravity",
+        "claude"
+      ],
+      "pushedAt": "2026-11-02T01:08:47Z",
+      "archived": false
+    },
+    {
+      "repo": "VoltAgent/awesome-agent-skills",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "category": "skills",
+      "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+      "stars": 36865,
+      "language": null,
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "awesome-list",
+        "claude-code",
+        "claude-code-skills",
+        "claude-skills"
+      ],
+      "pushedAt": "2026-11-02T08:19:59Z",
+      "archived": false
+    },
+    {
+      "repo": "ahujasid/mcp-for-blender",
+      "url": "https://github.com/ahujasid/mcp-for-blender",
+      "category": "mcp",
+      "description": "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.",
+      "stars": 33340,
+      "language": "Python",
+      "topics": [
+        "3d-modeling",
+        "ai",
+        "blender",
+        "blender-addon",
+        "blender-mcp",
+        "claude"
+      ],
+      "pushedAt": "2026-11-04T13:04:08Z",
+      "archived": false
+    },
+    {
+      "repo": "PrefectHQ/fastmcp",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "category": "mcp",
+      "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "stars": 28312,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "fastmcp",
+        "llms",
+        "mcp",
+        "mcp-clients",
+        "mcp-servers"
+      ],
+      "pushedAt": "2026-11-05T06:25:23Z",
+      "archived": false
+    },
+    {
+      "repo": "modelcontextprotocol/python-sdk",
+      "url": "https://github.com/modelcontextprotocol/python-sdk",
+      "category": "mcp",
+      "description": "The official Python SDK for Model Context Protocol servers and clients",
+      "stars": 24766,
+      "language": "Python",
+      "topics": [
+        "mcp",
+        "mcp-client",
+        "mcp-server",
+        "python"
+      ],
+      "pushedAt": "2026-11-03T13:33:25Z",
+      "archived": false
+    },
+    {
+      "repo": "microsoft/mcp-for-beginners",
+      "url": "https://github.com/microsoft/mcp-for-beginners",
+      "category": "mcp",
+      "description": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration.",
+      "stars": 17606,
+      "language": "Jupyter Notebook",
+      "topics": [
+        "csharp",
+        "java",
+        "javascript",
+        "javascript-applications",
+        "mcp",
+        "mcp-client"
+      ],
+      "pushedAt": "2026-11-02T03:13:47Z",
+      "archived": false
+    },
+    {
+      "repo": "CoplayDev/unity-mcp",
+      "url": "https://github.com/CoplayDev/unity-mcp",
+      "category": "mcp",
+      "description": "Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
+      "stars": 15717,
+      "language": "C#",
+      "topics": [
+        "ai",
+        "ai-integration",
+        "anthropic",
+        "claude",
+        "copilot",
+        "cursor"
+      ],
+      "pushedAt": "2026-10-30T18:15:23Z",
+      "archived": false
+    },
+    {
+      "repo": "modelcontextprotocol/typescript-sdk",
+      "url": "https://github.com/modelcontextprotocol/typescript-sdk",
+      "category": "mcp",
+      "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
+      "stars": 13708,
+      "language": "TypeScript",
+      "topics": [
+        "mcp",
+        "mcp-client",
+        "mcp-server",
+        "typescript"
+      ],
+      "pushedAt": "2026-10-31T10:56:10Z",
+      "archived": false
+    },
+    {
+      "repo": "modelcontextprotocol/inspector",
+      "url": "https://github.com/modelcontextprotocol/inspector",
+      "category": "mcp",
+      "description": "Deterministic testing tools for MCP servers",
+      "stars": 11234,
+      "language": "TypeScript",
+      "topics": [
+        "cli",
+        "debug",
+        "mcp",
+        "tool",
+        "tui",
+        "web"
+      ],
+      "pushedAt": "2026-11-05T06:32:49Z",
+      "archived": false
+    },
+    {
+      "repo": "AnswerDotAI/llms-txt",
+      "url": "https://github.com/AnswerDotAI/llms-txt",
+      "category": "agent-ready-web",
+      "description": "The /llms.txt file, helping language models use your website",
+      "stars": 2679,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "pushedAt": "2026-09-24T18:21:11Z",
+      "archived": false
+    },
+    {
+      "repo": "thedaviddias/llms-txt-hub",
+      "url": "https://github.com/thedaviddias/llms-txt-hub",
+      "category": "agent-ready-web",
+      "description": "🤖 The largest directory for AI-ready documentation and tools implementing the proposed llms.txt standard",
+      "stars": 923,
+      "language": "TypeScript",
+      "topics": [
+        "cursor",
+        "cursor-ai",
+        "directory",
+        "llms",
+        "llms-txt",
+        "llmstxt"
+      ],
+      "pushedAt": "2026-11-04T21:39:28Z",
+      "archived": false
+    },
+    {
+      "repo": "jdevalk/specification.website",
+      "url": "https://github.com/jdevalk/specification.website",
+      "category": "agent-ready-web",
+      "description": "Website specification — HTML, accessibility, security, SEO, agent-readiness. Platform-agnostic, sourced, MIT.",
+      "stars": 923,
+      "language": "TypeScript",
+      "topics": [
+        "accessibility",
+        "agent-readiness",
+        "astro",
+        "cloudflare-pages",
+        "llms-txt",
+        "mcp"
+      ],
+      "pushedAt": "2026-11-04T19:38:45Z",
+      "archived": false
+    },
+    {
+      "repo": "blk69912/technocore-chat",
+      "url": "https://github.com/blk69912/technocore-chat",
+      "category": "agent-ready-web",
+      "description": "HTTP-native chat and notes for agents whose sandbox only allows webfetch — every write is a plain GET. Runs technocore.chat.",
+      "stars": 0,
+      "language": null,
+      "topics": [],
+      "pushedAt": "2026-11-03T22:40:18Z",
+      "archived": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "basics": {
+    "name": "Your Name",
+    "label": "Software engineer building tools for AI agents",
+    "email": "",
+    "url": "https://github.com/blk69912",
+    "summary": "Replace this with two sentences about what you build and what you want to work on next. This file feeds the page, /resume.json, JSON-LD, and llms.txt.",
+    "location": { "city": "Tokyo", "countryCode": "JP" },
+    "profiles": [
+      { "network": "GitHub", "username": "blk69912", "url": "https://github.com/blk69912" }
+    ]
+  },
+  "work": [
+    { "name": "Independent", "position": "Open-source developer", "startDate": "2025-01", "summary": "Builds agent tooling and HTTP-native services.", "highlights": ["technocore-chat: chat and notes for agents limited to web fetch", "Agent Ready: tools for the agent-readable web"] }
+  ],
+  "projects": [
+    { "name": "technocore-chat", "description": "HTTP-native chat and notes for agents whose sandbox only allows web fetch.", "url": "https://github.com/blk69912/technocore-chat" },
+    { "name": "Agent Ready", "description": "Checker, developer tools, and games for the agent-readable web.", "url": "https://github.com/blk69912/website" }
+  ],
+  "skills": [
+    { "name": "Agents", "keywords": ["Tool calling", "MCP", "Agent Skills"] },
+    { "name": "Web", "keywords": ["TypeScript", "Next.js", "HTTP"] }
+  ]
+}

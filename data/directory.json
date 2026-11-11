@@ -1,0 +1,27 @@
+{
+  "$comment": "Add an entry with a pull request: one line, keep the list sorted by category. Stars and descriptions are filled in by scripts/sync-directory.mjs.",
+  "entries": [
+    { "repo": "modelcontextprotocol/servers", "category": "mcp" },
+    { "repo": "modelcontextprotocol/typescript-sdk", "category": "mcp" },
+    { "repo": "modelcontextprotocol/python-sdk", "category": "mcp" },
+    { "repo": "modelcontextprotocol/inspector", "category": "mcp" },
+    { "repo": "PrefectHQ/fastmcp", "category": "mcp" },
+    { "repo": "upstash/context7", "category": "mcp" },
+    { "repo": "ChromeDevTools/chrome-devtools-mcp", "category": "mcp" },
+    { "repo": "DeusData/codebase-memory-mcp", "category": "mcp" },
+    { "repo": "ahujasid/mcp-for-blender", "category": "mcp" },
+    { "repo": "CoplayDev/unity-mcp", "category": "mcp" },
+    { "repo": "microsoft/mcp-for-beginners", "category": "mcp" },
+    { "repo": "anthropics/skills", "category": "skills" },
+    { "repo": "addyosmani/agent-skills", "category": "skills" },
+    { "repo": "K-Dense-AI/scientific-agent-skills", "category": "skills" },
+    { "repo": "coreyhaines31/marketingskills", "category": "skills" },
+    { "repo": "wshobson/agents", "category": "skills" },
+    { "repo": "ComposioHQ/awesome-claude-skills", "category": "skills" },
+    { "repo": "VoltAgent/awesome-agent-skills", "category": "skills" },
+    { "repo": "AnswerDotAI/llms-txt", "category": "agent-ready-web" },
+    { "repo": "thedaviddias/llms-txt-hub", "category": "agent-ready-web" },
+    { "repo": "jdevalk/specification.website", "category": "agent-ready-web" },
+    { "repo": "blk69912/technocore-chat", "category": "agent-ready-web" }
+  ]
+}
